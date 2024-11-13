@@ -1,0 +1,34 @@
+BLDEA-CSE@DESKTOP-U1KVMDA MINGW64 /d/exp9 (master)
+$ git tag v1.0
+
+BLDEA-CSE@DESKTOP-U1KVMDA MINGW64 /d/exp9 (master)
+$ git tag v2.0
+
+BLDEA-CSE@DESKTOP-U1KVMDA MINGW64 /d/exp9 (master)
+$ git tagBLDEA-CSE@DESKTOP-U1KVMDA MINGW64 /d/exp9 (master)
+$ git tag v3.0
+
+BLDEA-CSE@DESKTOP-U1KVMDA MINGW64 /d/exp9 (master)
+$ git tag kiccha
+
+BLDEA-CSE@DESKTOP-U1KVMDA MINGW64 /d/exp9 (master)
+$ git tag
+kiccha
+v1.0
+v1.o
+v2.0
+v3.0
+
+
+BLDEA-CSE@DESKTOP-U1KVMDA MINGW64 /d/exp9 (master)
+$ git push origin tag kiccha
+Enumerating objects: 19, done.
+Counting objects: 100% (19/19), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (19/19), 1.49 KiB | 1.49 MiB/s, done.
+Total 19 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), done.
+To https://github.com/tarahullur123/tarahullur123.git
+ * [new tag]         kiccha -> kiccha
+
