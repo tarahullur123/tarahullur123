@@ -1,0 +1,98 @@
+
+BLDEA-CSE@DESKTOP-TIMCDMV MINGW64 ~ (master)
+$ cd d:
+
+BLDEA-CSE@DESKTOP-TIMCDMV MINGW64 /d
+$ cd exp06
+
+BLDEA-CSE@DESKTOP-TIMCDMV MINGW64 /d/exp06
+$ git init
+Initialized empty Git repository in D:/exp06/.git/
+
+BLDEA-CSE@DESKTOP-TIMCDMV MINGW64 /d/exp06 (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+BLDEA-CSE@DESKTOP-TIMCDMV MINGW64 /d/exp06 (master)
+$ nano pgm6.txt
+
+BLDEA-CSE@DESKTOP-TIMCDMV MINGW64 /d/exp06 (master)
+$ git add .
+warning: in the working copy of 'pgm6.txt', LF will be replaced by CRLF the next time Git touches it
+
+BLDEA-CSE@DESKTOP-TIMCDMV MINGW64 /d/exp06 (master)
+$ git commit m "1message"
+error: pathspec 'm' did not match any file(s) known to git
+error: pathspec '1message' did not match any file(s) known to git
+
+BLDEA-CSE@DESKTOP-TIMCDMV MINGW64 /d/exp06 (master)
+$ git commit -m "00"
+[master (root-commit) cabb31c] 00
+ 1 file changed, 2 insertions(+)
+ create mode 100644 pgm6.txt
+
+BLDEA-CSE@DESKTOP-TIMCDMV MINGW64 /d/exp06 (master)
+$ git branch
+* master
+
+BLDEA-CSE@DESKTOP-TIMCDMV MINGW64 /d/exp06 (master)
+$ git branch feature_branch
+
+BLDEA-CSE@DESKTOP-TIMCDMV MINGW64 /d/exp06 (master)
+$ git branch
+  feature_branch
+* master
+
+BLDEA-CSE@DESKTOP-TIMCDMV MINGW64 /d/exp06 (master)
+$ git checkout feature_branch
+Switched to branch 'feature_branch'
+
+BLDEA-CSE@DESKTOP-TIMCDMV MINGW64 /d/exp06 (feature_branch)
+$ nano pgm6a.txt
+
+BLDEA-CSE@DESKTOP-TIMCDMV MINGW64 /d/exp06 (feature_branch)
+$ git add .
+warning: in the working copy of 'pgm6a.txt', LF will be replaced by CRLF the next time Git touches it
+
+BLDEA-CSE@DESKTOP-TIMCDMV MINGW64 /d/exp06 (feature_branch)
+$ git commit -m "hello"
+[feature_branch 356a7ce] hello
+ 1 file changed, 2 insertions(+)
+ create mode 100644 pgm6a.txt
+
+BLDEA-CSE@DESKTOP-TIMCDMV MINGW64 /d/exp06 (feature_branch)
+$ git add remote origin https://github.com/tarahullur123/EXP10.git
+fatal: pathspec 'remote' did not match any files
+
+BLDEA-CSE@DESKTOP-TIMCDMV MINGW64 /d/exp06 (feature_branch)
+$ git push -u origin feature_branch
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+BLDEA-CSE@DESKTOP-TIMCDMV MINGW64 /d/exp06 (feature_branch)
+$ git checkout master
+Switched to branch 'master'
+
+BLDEA-CSE@DESKTOP-TIMCDMV MINGW64 /d/exp06 (master)
+$ git merge feature_branch --no-ff -m "Purpose of Merge"
+Merge made by the 'ort' strategy.
+ pgm6a.txt | 2 ++
+ 1 file changed, 2 insertions(+)
+ create mode 100644 pgm6a.txt
+
+BLDEA-CSE@DESKTOP-TIMCDMV MINGW64 /d/exp06 (master)
+$ git log --merges
+commit 005019b1183fb8ddffad6e547be579d9dc3b509e (HEAD -> master)
+Merge: cabb31c 356a7ce
+Author: basavarajsarashetti <bsarashetti@gmail.com>
+Date:   Wed Nov 20 09:34:36 2024 +0530
+
+    Purpose of Merge
+
