@@ -1,0 +1,335 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fmodern\fprq1 Lucida Console;}{\f1\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red28\green168\blue0;\red177\green72\blue198;\red192\green160\blue0;\red0\green168\blue154;\red0\green240\blue240;\red0\green242\blue0;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\cf1\f0\fs32\lang9 BLDEA-CSE@DESKTOP-OTRTNFF \cf2 MINGW64 \cf3 ~\cf4  (master)\par
+\cf0 $ cd d:\par
+\par
+\cf1 BLDEA-CSE@DESKTOP-OTRTNFF \cf2 MINGW64 \cf3 /d\cf4  (newbranch)\par
+\cf0 $ mkdir exp172\par
+\par
+\cf1 BLDEA-CSE@DESKTOP-OTRTNFF \cf2 MINGW64 \cf3 /d\cf4  (newbranch)\par
+\cf0 $ cd exp172\par
+\par
+\cf1 BLDEA-CSE@DESKTOP-OTRTNFF \cf2 MINGW64 \cf3 /d/exp172\cf4  (newbranch)\par
+\cf0 $ git init\par
+Initialized empty Git repository in D:/exp172/.git/\par
+\par
+\cf1 BLDEA-CSE@DESKTOP-OTRTNFF \cf2 MINGW64 \cf3 /d/exp172\cf4  (master)\par
+\cf0 $ nano cherry1.txt\par
+\par
+\cf1 BLDEA-CSE@DESKTOP-OTRTNFF \cf2 MINGW64 \cf3 /d/exp172\cf4  (master)\par
+\cf0 $ git add .\par
+warning: in the working copy of 'cherry1.txt', LF will be replaced by CRLF the next time Git touches it\par
+\par
+\cf1 BLDEA-CSE@DESKTOP-OTRTNFF \cf2 MINGW64 \cf3 /d/exp172\cf4  (master)\par
+\cf0 $ git commit -m "1msg"\par
+[master (root-commit) aa989a4] 1msg\par
+ 1 file changed, 1 insertion(+)\par
+ create mode 100644 cherry1.txt\par
+\par
+\cf1 BLDEA-CSE@DESKTOP-OTRTNFF \cf2 MINGW64 \cf3 /d/exp172\cf4  (master)\par
+\cf0 $ nano cherry1.txt\par
+\par
+\cf1 BLDEA-CSE@DESKTOP-OTRTNFF \cf2 MINGW64 \cf3 /d/exp172\cf4  (master)\par
+\cf0 $ git add .\par
+warning: in the working copy of 'cherry1.txt', LF will be replaced by CRLF the next time Git touches it\par
+\par
+\cf1 BLDEA-CSE@DESKTOP-OTRTNFF \cf2 MINGW64 \cf3 /d/exp172\cf4  (master)\par
+\cf0 $ git commit -m "2msg"\par
+[master eced5a0] 2msg\par
+ 1 file changed, 1 insertion(+)\par
+\par
+\cf1 BLDEA-CSE@DESKTOP-OTRTNFF \cf2 MINGW64 \cf3 /d/exp172\cf4  (master)\par
+\cf0 $ git log\par
+\cf3 commit eced5a0c631c2409ba6b4ab2f615e86504fe076f (\cf5 HEAD\cf3  -> \cf6 master\cf3 )\par
+\cf0 Author: Vikram808 <vikramsingh8082king@gmail.com>\par
+Date:   Wed Dec 4 09:37:56 2024 +0530\par
+\par
+    2msg\par
+\par
+\cf3 commit aa989a4040ef31d3fc5fc7c0cc32214df5bb062a\par
+\cf0 Author: Vikram808 <vikramsingh8082king@gmail.com>\par
+Date:   Wed Dec 4 09:36:47 2024 +0530\par
+\par
+    1msg\par
+\par
+\cf1 BLDEA-CSE@DESKTOP-OTRTNFF \cf2 MINGW64 \cf3 /d/exp172\cf4  (master)\par
+\cf0 $ git branch\par
+* \cf1 master\par
+\par
+BLDEA-CSE@DESKTOP-OTRTNFF \cf2 MINGW64 \cf3 /d/exp172\cf4  (master)\par
+\cf0 $ git branch feature\par
+\par
+\cf1 BLDEA-CSE@DESKTOP-OTRTNFF \cf2 MINGW64 \cf3 /d/exp172\cf4  (master)\par
+\cf0 $\par
+\par
+\cf1 BLDEA-CSE@DESKTOP-OTRTNFF \cf2 MINGW64 \cf3 /d/exp172\cf4  (master)\par
+\cf0 $ git branch\par
+  feature\par
+* \cf1 master\par
+\par
+BLDEA-CSE@DESKTOP-OTRTNFF \cf2 MINGW64 \cf3 /d/exp172\cf4  (master)\par
+\cf0 $ git checkout feature\par
+Switched to branch 'feature'\par
+\par
+\cf1 BLDEA-CSE@DESKTOP-OTRTNFF \cf2 MINGW64 \cf3 /d/exp172\cf4  (feature)\par
+\cf0 $ nano cherry2.txt\par
+\par
+\cf1 BLDEA-CSE@DESKTOP-OTRTNFF \cf2 MINGW64 \cf3 /d/exp172\cf4  (feature)\par
+\cf0 $ git add .\par
+warning: in the working copy of 'cherry2.txt', LF will be replaced by CRLF the next time Git touches it\par
+\par
+\cf1 BLDEA-CSE@DESKTOP-OTRTNFF \cf2 MINGW64 \cf3 /d/exp172\cf4  (feature)\par
+\cf0 $ git commit -m "1commit"\par
+[feature 7f587d1] 1commit\par
+ 1 file changed, 1 insertion(+)\par
+ create mode 100644 cherry2.txt\par
+\par
+\cf1 BLDEA-CSE@DESKTOP-OTRTNFF \cf2 MINGW64 \cf3 /d/exp172\cf4  (feature)\par
+\cf0 $ nano cherry2.txt\par
+\par
+\cf1 BLDEA-CSE@DESKTOP-OTRTNFF \cf2 MINGW64 \cf3 /d/exp172\cf4  (feature)\par
+\cf0 $ git add .\par
+warning: in the working copy of 'cherry2.txt', LF will be replaced by CRLF the next time Git touches it\par
+\par
+\cf1 BLDEA-CSE@DESKTOP-OTRTNFF \cf2 MINGW64 \cf3 /d/exp172\cf4  (feature)\par
+\cf0 $ git commit -m "2commit"\par
+[feature 9a46b74] 2commit\par
+ 1 file changed, 1 insertion(+)\par
+\par
+\cf1 BLDEA-CSE@DESKTOP-OTRTNFF \cf2 MINGW64 \cf3 /d/exp172\cf4  (feature)\par
+\cf0 $ nano cherry2.txt\par
+\par
+\cf1 BLDEA-CSE@DESKTOP-OTRTNFF \cf2 MINGW64 \cf3 /d/exp172\cf4  (feature)\par
+\cf0 $ git add .\par
+warning: in the working copy of 'cherry2.txt', LF will be replaced by CRLF the next time Git touches it\par
+\par
+\cf1 BLDEA-CSE@DESKTOP-OTRTNFF \cf2 MINGW64 \cf3 /d/exp172\cf4  (feature)\par
+\cf0 $ git commit -m "3commit"\par
+[feature df5a820] 3commit\par
+ 1 file changed, 1 insertion(+)\par
+\par
+\cf1 BLDEA-CSE@DESKTOP-OTRTNFF \cf2 MINGW64 \cf3 /d/exp172\cf4  (feature)\par
+\cf0 $ nano cherry2.txt\par
+\par
+\cf1 BLDEA-CSE@DESKTOP-OTRTNFF \cf2 MINGW64 \cf3 /d/exp172\cf4  (feature)\par
+\cf0 $ git add .\par
+warning: in the working copy of 'cherry2.txt', LF will be replaced by CRLF the next time Git touches it\par
+\par
+\cf1 BLDEA-CSE@DESKTOP-OTRTNFF \cf2 MINGW64 \cf3 /d/exp172\cf4  (feature)\par
+\cf0 $ git commit -m "4commit"\par
+[feature 2b50fc2] 4commit\par
+ 1 file changed, 1 insertion(+)\par
+\par
+\cf1 BLDEA-CSE@DESKTOP-OTRTNFF \cf2 MINGW64 \cf3 /d/exp172\cf4  (feature)\par
+\cf0 $ git log\par
+\cf3 commit 2b50fc2bc71d4927a8f3b25d2a58426f2e69ada5 (\cf5 HEAD\cf3  -> \cf6 feature\cf3 )\par
+\cf0 Author: Vikram808 <vikramsingh8082king@gmail.com>\par
+Date:   Wed Dec 4 09:43:41 2024 +0530\par
+\par
+    4commit\par
+\par
+\cf3 commit df5a820a7c3d2896a0cdbbfe97c6dba93843ff1f\par
+\cf0 Author: Vikram808 <vikramsingh8082king@gmail.com>\par
+Date:   Wed Dec 4 09:42:59 2024 +0530\par
+\par
+    3commit\par
+\par
+\cf3 commit 9a46b74d78fd72e3d8d0a8ee33187a584e8365bf\par
+\cf0 Author: Vikram808 <vikramsingh8082king@gmail.com>\par
+Date:   Wed Dec 4 09:42:17 2024 +0530\par
+\par
+    2commit\par
+\par
+\cf3 commit 7f587d134924f8a5b23e6698d43c058c75dd20bf\par
+\cf0 Author: Vikram808 <vikramsingh8082king@gmail.com>\par
+Date:   Wed Dec 4 09:41:30 2024 +0530\par
+\par
+    1commit\par
+\par
+\cf3 commit eced5a0c631c2409ba6b4ab2f615e86504fe076f (\cf6 master\cf3 )\par
+\cf0 Author: Vikram808 <vikramsingh8082king@gmail.com>\par
+Date:   Wed Dec 4 09:37:56 2024 +0530\par
+\par
+    2msg\par
+\par
+\cf3 commit aa989a4040ef31d3fc5fc7c0cc32214df5bb062a\par
+\cf0 Author: Vikram808 <vikramsingh8082king@gmail.com>\par
+Date:   Wed Dec 4 09:36:47 2024 +0530\par
+\par
+    1msg\par
+\par
+\cf1 BLDEA-CSE@DESKTOP-OTRTNFF \cf2 MINGW64 \cf3 /d/exp172\cf4  (feature)\par
+\cf0 $ nano cherry2.txt\par
+\par
+\cf1 BLDEA-CSE@DESKTOP-OTRTNFF \cf2 MINGW64 \cf3 /d/exp172\cf4  (feature)\par
+\cf0 $ git add .\par
+warning: in the working copy of 'cherry2.txt', LF will be replaced by CRLF the next time Git touches it\par
+\par
+\cf1 BLDEA-CSE@DESKTOP-OTRTNFF \cf2 MINGW64 \cf3 /d/exp172\cf4  (feature)\par
+\cf0 $ git commit -m "5commit"\par
+[feature e5ca29e] 5commit\par
+ 1 file changed, 1 insertion(+)\par
+\par
+\cf1 BLDEA-CSE@DESKTOP-OTRTNFF \cf2 MINGW64 \cf3 /d/exp172\cf4  (feature)\par
+\cf0 $ git checkout master\par
+Switched to branch 'master'\par
+\par
+\cf1 BLDEA-CSE@DESKTOP-OTRTNFF \cf2 MINGW64 \cf3 /d/exp172\cf4  (master)\par
+\cf0 $ git log\par
+\cf3 commit eced5a0c631c2409ba6b4ab2f615e86504fe076f (\cf5 HEAD\cf3  -> \cf6 master\cf3 )\par
+\cf0 Author: Vikram808 <vikramsingh8082king@gmail.com>\par
+Date:   Wed Dec 4 09:37:56 2024 +0530\par
+\par
+    2msg\par
+\par
+\cf3 commit aa989a4040ef31d3fc5fc7c0cc32214df5bb062a\par
+\cf0 Author: Vikram808 <vikramsingh8082king@gmail.com>\par
+Date:   Wed Dec 4 09:36:47 2024 +0530\par
+\par
+    1msg\par
+\par
+\cf1 BLDEA-CSE@DESKTOP-OTRTNFF \cf2 MINGW64 \cf3 /d/exp172\cf4  (master)\par
+\cf0 $ git checkout feature\par
+Switched to branch 'feature'\par
+\par
+\cf1 BLDEA-CSE@DESKTOP-OTRTNFF \cf2 MINGW64 \cf3 /d/exp172\cf4  (feature)\par
+\cf0 $ git log\par
+\cf3 commit e5ca29ea1dfa0e380f7b06bbc4c680c56a90859b (\cf5 HEAD\cf3  -> \cf6 feature\cf3 )\par
+\cf0 Author: Vikram808 <vikramsingh8082king@gmail.com>\par
+Date:   Wed Dec 4 10:02:43 2024 +0530\par
+\par
+    5commit\par
+\par
+\cf3 commit 2b50fc2bc71d4927a8f3b25d2a58426f2e69ada5\par
+\cf0 Author: Vikram808 <vikramsingh8082king@gmail.com>\par
+Date:   Wed Dec 4 09:43:41 2024 +0530\par
+\par
+    4commit\par
+\par
+\cf3 commit df5a820a7c3d2896a0cdbbfe97c6dba93843ff1f\par
+\cf0 Author: Vikram808 <vikramsingh8082king@gmail.com>\par
+Date:   Wed Dec 4 09:42:59 2024 +0530\par
+\par
+    3commit\par
+\par
+\cf3 commit 9a46b74d78fd72e3d8d0a8ee33187a584e8365bf\par
+\cf0 Author: Vikram808 <vikramsingh8082king@gmail.com>\par
+Date:   Wed Dec 4 09:42:17 2024 +0530\par
+\par
+    2commit\par
+\par
+\cf3 commit 7f587d134924f8a5b23e6698d43c058c75dd20bf\par
+\cf0 Author: Vikram808 <vikramsingh8082king@gmail.com>\par
+Date:   Wed Dec 4 09:41:30 2024 +0530\par
+\par
+    1commit\par
+\par
+\cf3 commit eced5a0c631c2409ba6b4ab2f615e86504fe076f (\cf6 master\cf3 )\par
+\cf0 Author: Vikram808 <vikramsingh8082king@gmail.com>\par
+Date:   Wed Dec 4 09:37:56 2024 +0530\par
+\par
+    2msg\par
+\par
+\cf3 commit aa989a4040ef31d3fc5fc7c0cc32214df5bb062a\par
+\cf0 Author: Vikram808 <vikramsingh8082king@gmail.com>\par
+Date:   Wed Dec 4 09:36:47 2024 +0530\par
+\par
+    1msg\par
+\par
+\cf1 BLDEA-CSE@DESKTOP-OTRTNFF \cf2 MINGW64 \cf3 /d/exp172\cf4  (feature)\par
+\cf0 $ git checkout master\par
+Switched to branch 'master'\par
+\par
+\cf1 BLDEA-CSE@DESKTOP-OTRTNFF \cf2 MINGW64 \cf3 /d/exp172\cf4  (master)\par
+\cf0 $ git cherry-pick 9a46b74d78fd72e3d8d0a8ee33187a584e8365bf\par
+CONFLICT (modify/delete): cherry2.txt deleted in HEAD and modified in 9a46b74 (2commit).  Version 9a46b74 (2commit) of cherry2.txt left in tree.\par
+error: could not apply 9a46b74... 2commit\par
+\cf3 hint: After resolving the conflicts, mark them with\par
+hint: "git add/rm <pathspec>", then run\par
+hint: "git cherry-pick --continue".\par
+hint: You can instead skip this commit with "git cherry-pick --skip".\par
+hint: To abort and get back to the state before "git cherry-pick",\par
+hint: run "git cherry-pick --abort".\par
+\par
+\cf1 BLDEA-CSE@DESKTOP-OTRTNFF \cf2 MINGW64 \cf3 /d/exp172\cf4  (master|CHERRY-PICKING)\par
+\cf0 $ git add .\par
+\par
+\cf1 BLDEA-CSE@DESKTOP-OTRTNFF \cf2 MINGW64 \cf3 /d/exp172\cf4  (master|CHERRY-PICKING)\par
+\cf0 $ git cherry-pick --continue\par
+[master 20faa78] 2commit\par
+ Date: Wed Dec 4 09:42:17 2024 +0530\par
+ 1 file changed, 2 insertions(+)\par
+ create mode 100644 cherry2.txt\par
+\par
+\cf1 BLDEA-CSE@DESKTOP-OTRTNFF \cf2 MINGW64 \cf3 /d/exp172\cf4  (master)\par
+\cf0 $ git cherry1.txt\par
+git: 'cherry1.txt' is not a git command. See 'git --help'.\par
+\par
+\cf1 BLDEA-CSE@DESKTOP-OTRTNFF \cf2 MINGW64 \cf3 /d/exp172\cf4  (master)\par
+\cf0 $ nano cherry1.txt\par
+\par
+\cf1 BLDEA-CSE@DESKTOP-OTRTNFF \cf2 MINGW64 \cf3 /d/exp172\cf4  (master)\par
+\cf0 $ ls\par
+cherry1.txt  cherry2.txt\par
+\par
+\cf1 BLDEA-CSE@DESKTOP-OTRTNFF \cf2 MINGW64 \cf3 /d/exp172\cf4  (master)\par
+\cf0 $ nano cherry1.txt\par
+\par
+\cf1 BLDEA-CSE@DESKTOP-OTRTNFF \cf2 MINGW64 \cf3 /d/exp172\cf4  (master)\par
+\cf0 $ git add .\par
+warning: in the working copy of 'cherry1.txt', LF will be replaced by CRLF the next time Git touches it\par
+\par
+\cf1 BLDEA-CSE@DESKTOP-OTRTNFF \cf2 MINGW64 \cf3 /d/exp172\cf4  (master)\par
+\cf0 $ git commit -m "tara"\par
+[master 51a711f] tara\par
+ 1 file changed, 1 insertion(+)\par
+\par
+\cf1 BLDEA-CSE@DESKTOP-OTRTNFF \cf2 MINGW64 \cf3 /d/exp172\cf4  (master)\par
+\cf0 $ git log\par
+\cf3 commit 51a711f7e065c0faf3d0b77d84fce60f3391b47e (\cf5 HEAD\cf3  -> \cf6 master\cf3 )\par
+\cf0 Author: Vikram808 <vikramsingh8082king@gmail.com>\par
+Date:   Wed Dec 4 10:45:18 2024 +0530\par
+\par
+    tara\par
+\par
+\cf3 commit 20faa78d587c71065ff8a6da2dccdf3500911171\par
+\cf0 Author: Vikram808 <vikramsingh8082king@gmail.com>\par
+Date:   Wed Dec 4 09:42:17 2024 +0530\par
+\par
+    2commit\par
+\par
+\cf3 commit eced5a0c631c2409ba6b4ab2f615e86504fe076f\par
+\cf0 Author: Vikram808 <vikramsingh8082king@gmail.com>\par
+Date:   Wed Dec 4 09:37:56 2024 +0530\par
+\par
+    2msg\par
+\par
+\cf3 commit aa989a4040ef31d3fc5fc7c0cc32214df5bb062a\par
+\cf0 Author: Vikram808 <vikramsingh8082king@gmail.com>\par
+Date:   Wed Dec 4 09:36:47 2024 +0530\par
+\par
+    1msg\par
+\par
+\cf1 BLDEA-CSE@DESKTOP-OTRTNFF \cf2 MINGW64 \cf3 /d/exp172\cf4  (master)\par
+\cf0 $ git checkout feature\par
+Switched to branch 'feature'\par
+\par
+\cf1 BLDEA-CSE@DESKTOP-OTRTNFF \cf2 MINGW64 \cf3 /d/exp172\cf4  (feature)\par
+\cf0 $ ls\par
+cherry1.txt  cherry2.txt\par
+\par
+\cf1 BLDEA-CSE@DESKTOP-OTRTNFF \cf2 MINGW64 \cf3 /d/exp172\cf4  (feature)\par
+\cf0 $ nano cherry1.txt\par
+\par
+\cf1 BLDEA-CSE@DESKTOP-OTRTNFF \cf2 MINGW64 \cf3 /d/exp172\cf4  (feature)\par
+\cf0 $ git cherry-pick 51a711f7e065c0faf3d0b77d84fce60f3391b47e\par
+[feature 00fba05] tara\par
+ Date: Wed Dec 4 10:45:18 2024 +0530\par
+ 1 file changed, 1 insertion(+)\par
+\par
+\cf1 BLDEA-CSE@DESKTOP-OTRTNFF \cf2 MINGW64 \cf3 /d/exp172\cf4  (feature)\par
+\cf0 $ nano cherry1.txt\par
+\f1\fs22\par
+}
+ 
